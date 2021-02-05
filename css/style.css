@@ -205,7 +205,7 @@ a {
     text-align: center;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     border: 0;
     border-radius: 40px;
     cursor: pointer;
@@ -297,6 +297,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -374,10 +375,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.plan--popular {
-    transform: scale(1.1);
-}
-
 .plan--popular .card__header {
     position: relative;
 }
@@ -396,7 +393,7 @@ a {
 }
 
 .plan--popular:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 1024px) {
@@ -414,6 +411,14 @@ a {
 
     .plan__description {
         font-size: 1.7rem;
+    }
+
+    .plan--popular {
+        transform: scale(1.1);
+    }
+
+    .plan--popular:hover {
+        transform: scale(1.15);
     }
 }
 /* Media */
@@ -736,8 +741,9 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -762,6 +768,7 @@ a {
     max-width: 500px;
     margin: 0 auto;
 }
+
 
 /* feature Block */
 .feature {
@@ -788,6 +795,7 @@ a {
 }
 
 /* Showcase Block */
+
 .block-showcase__image > img {
     width: 100%;
 }
@@ -810,6 +818,7 @@ a {
 /* Footer */
 .footer {
     background: #232323;
+    padding-top: 10rem;
 }
 
 .footer__section {
@@ -885,3 +894,7 @@ a {
     }
 }
 
+/* Sign-up Callout */
+.callout-signup {
+    transform: translateY(5rem);
+  }
